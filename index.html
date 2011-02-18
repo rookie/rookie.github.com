@@ -1,57 +1,40 @@
 ---
 layout: default
-title:  koraktor
+title:  rookie
 projects:
-  - name:        Rubikon
-    description: A simple to use, yet powerful Ruby framework for building
-                 console-based applications
-    url:         rubikon
-  - name:        Silo
-    description: A command-line utility and API for Git-based backups
-    url:         silo
-  - name:        Steam Condenser
-    description: A multi-language library for querying the Steam Community,
-                 Source, GoldSrc servers and Steam master servers
-    url:         steam-condenser
+  - name:        LEDStrip
+    description: An Arduino library to control the RGB LED Strip
+                 from Sparkfun.com. Still waiting for delivery to test
+                 the strip.
+    url:         LEDStrip
+  - name:        mspduino
+    description: An msp430 project to port over the Arduino libraries. It
+                 needs to be updated and organized.
+    url:         led-light
+  - name:        FrequencyTimer2
+    description: Update code from 
+                 http://www.arduino.cc/playground/Code/FrequencyTimer2
+                 for use with Arduino 0018 and the ATmega328 chip.
+    url:         FrequencyTimer2
 contributions:
-  - name: GitHub Services
-    url:  http://github.com/github/github-services
-  - name: GitX (brotherbard's fork)
-    url:  http://github.com/brotherbard/gitx
-  - name: Glyph
-    url:  http://www.h3rald.com/glyph
-  - name: Grit
-    url:  https://github.com/mojombo/grit
-  - name: Homebrew
-    url:  http://mxcl.github.com/homebrew
-  - name: Jekyll
-    url:  http://jekyllrb.com
-  - name: RubyDoc.info
-    url:  http://rubydoc.info
-  - name: RubyGems.org
-    url:  http://rubygems.org
+  - name: FrequencyTimer2
+    url:  http://www.arduino.cc/playground/Code/FrequencyTimer2
 links:
   - name: GitHub profile
-    url:  http://github.com/koraktor
-  - name: Ohloh profile
-    url:  http://www.ohloh.net/accounts/Koraktor
-  - name: University of Applied Sciences Saarbrücken
-    url:  http://www.htw-saarland.de
+    url:  http://github.com/rookie
 ---
 
 <div id="avatar">
-  <img src="http://www.gravatar.com/avatar/a0cc4d1c55ee3ae48437c4e7774355b7" />
+  <img src="http://www.gravatar.com/avatar/115d5ce2de437a55aa98d59d4a98d823?d=mm" />
 </div>
 
-<h1>{{ page.title }} <em>Sebastian Staudt, M.Sc.</em></h1>
+<h1>{{ page.title }} <em>some guy doing things</em></h1>
 
 <h2>About me</h2>
 <div class="text">
-  I'm a guy from Germany and I'm working as a developer at an
-  <a href="http://www.dillinger.de">industrial enterprise</a>. In my time off,
-  I'm a proud dad and husband. Aside from that, I love to code for several
-  projects, some of them have been released as open source and can be seen
-  below.
+  I am a computer engineer that loves coding in his time of from coding at
+  work. Some of the projects i work on involve the Arduino or the iPhone, 
+  Android, or webOS. it will be interesting to see where it all ends up.
 </div>
 
 <h2>Open Source Projects</h2>
@@ -66,11 +49,11 @@ links:
 {% endfor %}
 </ul>
 You can find more projects I created in
-<a href="http://github.com/koraktor">my GitHub profile</a>.
+<a href="http://github.com/rookie">my GitHub profile</a>.
 
 <h2>Contributions</h2>
-Additionally, I made some &ndash; more or less important &ndash; contributions
-to other great open source projects:
+I am saving this area as a reminder to find some projects i could make 
+some contributions too.
 <ul>
 {% for contribution in page.contributions %}
   <li><a href="{{ contribution.url }}">{{ contribution.name }}</a></li>
@@ -83,5 +66,3 @@ to other great open source projects:
   <li><a href="{{ link.url }}">{{ link.name }}</a></li>
 {% endfor %}
 </ul>
-I'm also posting as <a href="http://twitter.com/k0raktor">@k0raktor</a> on
-Twitter – mostly German, though.
